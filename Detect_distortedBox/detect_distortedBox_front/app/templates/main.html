@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <title>main</title>
+    <style>
+    .button {
+     border: none;
+    color: white;
+    border-radius: 25px;
+    padding: 30px 57px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    }
+
+    .button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+    }
+
+    .button1:hover {
+    background-color: #4CAF50;
+    color: white;
+    }
+
+    .button2 {
+    background-color: white;
+    color: black;
+    border: 2px solid #e3092d;
+    }
+
+    .button2:hover {
+    background-color: #e3092d;
+    color: white;
+    }
+
+</style>
+
+</head>
+<body style="background-color:#e3e2de">
+<div  style="margin:30px 5px "><h4>Admin: {{user}}</h4></div>
+<div style="margin:220px 450px">
+<form action="/start" method="post" ><button type="submit" class="button button1"><h2>START</h2></button></form
+</div>
+<div >
+<form action="/stop" method="post"><button type="submit" class="button button2"><h2>STOP</h2></button></form
+</div>
+</body>
+</html>
